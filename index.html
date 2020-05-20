@@ -4,9 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>梁文俊</title>
+    <link rel="icon" type="image/x-icon" href="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez45n59m6j303k03k3yf.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" type="text/css" href="css.css" /> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
@@ -39,13 +38,16 @@
       <div id="wechat" class="preload-portrait">
         <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0asljljj30iq0owwfh.jpg" />
       </div>
+      <div id="learn" class="preload-portrait">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez40k5m2aj30u0140b29.jpg" />
+      </div>
       <h1>你好。</h1>
       <p style="font-weight: 500; font-size: 2.2em;">
         我的名字叫<a id="name">梁文俊</a>。
       </p>
       <p>
         我来自<a id="hometown">广东</a>，是一名在<a id="shanghaione">上海</a
-        >上学的大三学生，信息管理与信息系统专业。 正在<a
+        >上学的大三学生，信息管理与信息系统专业。 正在<a id="learning"
           href="https://github.com/neonon"
           >学习</a
         >前端开发，希望可以早日找到一份相关的实习工作。
@@ -125,6 +127,12 @@
         }),
         $("#qrcode").mouseout(function () {
           $("#wechat").css({ display: "none" });
+        }),
+        $("#learning").mouseover(function () {
+          $("#learn").css({ display: "block" });
+        }),
+        $("#learning").mouseout(function () {
+          $("#learn").css({ display: "none" });
         });
     });
   </script>
