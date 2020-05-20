@@ -5,30 +5,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>梁文俊</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css.css" /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
+
   <body>
-    <div id="preload">
-      <img src="P8183070.jpg" style="display: none !important;" />
+    <div class="body-bg">
+      <div id="me" class="preload-portrait">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0exxwzvj30u01404qp.jpg" />
+      </div>
+      <div id="guangdong" class="preload-portrait">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0f8tsntj30u01c0azq.jpg" />
+      </div>
+      <div id="shanghai1" class="preload-portrait">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0ds1g7cj30u0140x3y.jpg" />
+      </div>
+      <div id="mimall" class="preload-landscape">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0ep04wpj31hc0u0dp5.jpg" />
+      </div>
+      <div id="travel" class="preload-portrait">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0b7zbk3j30u00u04qp.jpg" />
+      </div>
+      <div id="photo" class="preload-landscape">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0e9ffxgj31400u0u0x.jpg" />
+      </div>
+      <div id="sanya" class="preload-landscape">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0dxcv07j31400u0qh1.jpg" />
+      </div>
+      <div id="shanghai2" class="preload-landscape">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0dhb9i5j31c00u0u0x.jpg" />
+      </div>
+      <div id="wechat" class="preload-portrait">
+        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0asljljj30iq0owwfh.jpg" />
+      </div>
+      <h1>你好。</h1>
+      <p style="font-weight: 500; font-size: 2.2em;">
+        我的名字叫<a id="name">梁文俊</a>。
+      </p>
+      <p>
+        我来自<a id="hometown">广东</a>，是一名在<a id="shanghaione">上海</a
+        >上学的大三学生，信息管理与信息系统专业。 正在<a
+          href="https://github.com/neonon"
+          >学习</a
+        >前端开发，希望可以早日找到一份相关的实习工作。
+      </p>
+      <p>
+        最近正在用 Vue.js 来做一个高仿的 PC 端<a id="xiaomi">小米商城</a
+        >网页，如果你有兴趣，这是项目的
+        <a href="https://github.com/neonon/imitating-mi-shop">Github 页面</a>。
+      </p>
+      <p>
+        在课外方面，我喜欢<a id="traveling">旅游</a>和<a id="photographing"
+          >摄影</a
+        >，曾在假期去<a id="hainan">三亚</a
+        >当了一个暑假的旅行义工，在上学期间，也用周末拍遍了<a id="shanghaitwo"
+          >上海</a
+        >大大小小的角落。
+      </p>
+      <p>
+        如果你有兴趣和我交个朋友，这是我的<a id="qrcode">微信二维码</a
+        >，我们可以多聊聊，技术，学习，生活，任何话题都可以。
+      </p>
     </div>
-    <h1>你好。</h1>
-    <p style="font-weight: 500; font-size: 2.2em;">
-      我的名字叫<a id="first">梁文俊</a>。
-    </p>
-    <p>
-      我来自<a>广东</a>，是一名在<a>上海</a>上学的大三学生，信息管理与信息系统专业。
-      正在<a href="https://github.com/neonon">学习</a>前端开发，希望可以早日找到一份相关的实习工作。
-    </p>
-    <p>
-      最近正在用 Vue.js 来做一个高仿的 PC
-      端<a>小米商城</a>网页，如果你有兴趣，这是项目的 <a href="https://github.com/neonon/imitating-mi-shop">Github 页面</a>。
-    </p>
-    <p>
-      在课外方面，我喜欢<a>旅游</a>和<a>摄影</a>，曾在假期去<a>三亚</a>当了一个暑假的旅行义工，在上学期间，也用周末拍遍了<a>上海</a>大大小小的角落。
-    </p>
-    <p>
-      如果你有兴趣和我交个朋友，这是我的<a>微信二维码</a>，我们可以多聊聊，技术，学习，生活，任何话题都可以。
-    </p>
   </body>
 
+  <script>
+    $(document).ready(function () {
+      $("#name").mouseover(function () {
+        $("#me").css({ display: "flex" });
+      }),
+        $("#name").mouseout(function () {
+          $("#me").css({ display: "none" });
+        }),
+        $("#hometown").mouseover(function () {
+          $("#guangdong").css({ display: "flex" });
+        }),
+        $("#hometown").mouseout(function () {
+          $("#guangdong").css({ display: "none" });
+        }),
+        $("#shanghaione").mouseover(function () {
+          $("#shanghai1").css({ display: "flex" });
+        }),
+        $("#shanghaione").mouseout(function () {
+          $("#shanghai1").css({ display: "none" });
+        }),
+        $("#xiaomi").mouseover(function () {
+          $("#mimall").css({ display: "flex" });
+        }),
+        $("#xiaomi").mouseout(function () {
+          $("#mimall").css({ display: "none" });
+        }),
+        $("#traveling").mouseover(function () {
+          $("#travel").css({ display: "flex" });
+        }),
+        $("#traveling").mouseout(function () {
+          $("#travel").css({ display: "none" });
+        }),
+        $("#photographing").mouseover(function () {
+          $("#photo").css({ display: "flex" });
+        }),
+        $("#photographing").mouseout(function () {
+          $("#photo").css({ display: "none" });
+        }),
+        $("#hainan").mouseover(function () {
+          $("#sanya").css({ display: "flex" });
+        }),
+        $("#hainan").mouseout(function () {
+          $("#sanya").css({ display: "none" });
+        }),
+        $("#shanghaitwo").mouseover(function () {
+          $("#shanghai2").css({ display: "flex" });
+        }),
+        $("#shanghaitwo").mouseout(function () {
+          $("#shanghai2").css({ display: "none" });
+        }),
+        $("#qrcode").mouseover(function () {
+          $("#wechat").css({ display: "flex" });
+        }),
+        $("#qrcode").mouseout(function () {
+          $("#wechat").css({ display: "none" });
+        });
+    });
+  </script>
+  <style>
+    body {
+      font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: calc(10px + 0.33vw);
+      -webkit-font-smoothing: antialiased;
+      padding: 0vh 10vw 5vh;
+      color: #121314;
+      position: relative;
+    }
+    .preload-portrait {
+      position: absolute;
+      display: none;
+      width: 30%;
+      height: auto;
+      transform: translate(0, -50%);
+      top: 50%;
+      left: 60%;
+      /* padding: 10% 20% 20% 50%; */
+      background-size: contain;
+      z-index: -2;
+    }
+    .preload-landscape {
+      position: absolute;
+      display: none;
+      width: 60%;
+      height: auto;
+      transform: translate(0, -50%);
+      top: 50%;
+      right: 5%;
+      /* padding: 10% 20% 20% 50%; */
+      background-size: contain;
+      z-index: -2;
+    }
+
+    img {
+      width: 100%;
+    }
+    h1 {
+      font-size: 4.5em;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.6em;
+      font-weight: 400;
+      line-height: 1.4;
+      max-width: 26em;
+    }
+    a {
+      text-decoration: none;
+      color: #121314;
+      position: relative;
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 60%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0;
+      transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      background-color: rgba(79, 192, 141, 0.5);
+    }
+    a:hover:after {
+      top: 0%;
+    }
+  </style>
 </html>
