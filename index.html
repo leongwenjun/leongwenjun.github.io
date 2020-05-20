@@ -6,7 +6,10 @@
     <title>梁文俊</title>
     <link rel="icon" type="image/x-icon" href="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez45n59m6j303k03k3yf.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="./popover.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -43,30 +46,32 @@
       </div>
       <h1>你好。</h1>
       <p style="font-weight: 500; font-size: 2.2em;">
-        我的名字叫<a id="name">梁文俊</a>。
+        我的名字叫<span id="name">梁文俊</span>。
       </p>
       <p>
-        我来自<a id="hometown">广东</a>，是一名在<a id="shanghaione">上海</a
-        >上学的大三学生，信息管理与信息系统专业。 正在<a id="learning"
+        我来自<span id="hometown">广东</span>，是一名在<span id="shanghaione">上海</span
+        >上学的大三学生，信息管理与信息系统专业。 正在<span id="learning"
           href="https://github.com/neonon"
-          >学习</a
-        >前端开发，希望可以早日找到一份相关的实习工作。
+          >学习</span
+        >前端开发，希望可以早日找到一份相关的实习。如果你碰巧了解相关的机会，欢迎<span title="简历下载"  
+			data-container="body" data-toggle="popover" data-placement="right" 
+			data-content="<a href='http://baidu.com'>中文</a> | English">点击此处</span>下载我的简历，我将不胜感激。
       </p>
       <p>
-        最近正在用 Vue.js 来做一个高仿的 PC 端<a id="xiaomi">小米商城</a
+        最近正在用 Vue.js 来做一个高仿的 PC 端<span id="xiaomi">小米商城</span
         >网页，如果你有兴趣，这是项目的
-        <a href="https://github.com/neonon/imitating-mi-shop">Github 页面</a>。
+        <span href="https://github.com/neonon/imitating-mi-shop">Github 页面</span>。
       </p>
       <p>
-        在课外方面，我喜欢<a id="traveling">旅游</a>和<a id="photographing"
-          >摄影</a
-        >，曾在假期去<a id="hainan">三亚</a
-        >当了一个暑假的旅行义工，在上学期间，也用周末拍遍了<a id="shanghaitwo"
-          >上海</a
+        在课外方面，我喜欢<span id="traveling">旅游</span>和<span id="photographing"
+          >摄影</span
+        >，曾在假期去<span id="hainan">三亚</span
+        >当了一个暑假的旅行义工，在上学期间，也用周末拍遍了<span id="shanghaitwo"
+          >上海</span
         >大大小小的角落。
       </p>
       <p>
-        如果你有兴趣和我交个朋友，这是我的<a id="qrcode">微信二维码</a
+        如果你有兴趣和我交个朋友，这是我的<span id="qrcode">微信二维码</span
         >，我们可以多聊聊，技术，学习，生活，任何话题都可以。
       </p>
     </div>
@@ -133,7 +138,10 @@
         }),
         $("#learning").mouseout(function () {
           $("#learn").css({ display: "none" });
-        });
+        }),
+        $(function () { 
+	$("[data-toggle='popover']").popover({html:true});
+});
     });
   </script>
   <style>
@@ -143,7 +151,7 @@
         sans-serif;
       font-size: calc(10px + 0.33vw);
       -webkit-font-smoothing: antialiased;
-      padding: 0vh 10vw 5vh;
+      padding: 0vh 10vw 5vh ;
       color: #121314;
       position: relative;
     }
@@ -186,12 +194,14 @@
       line-height: 1.4;
       max-width: 26em;
     }
-    a {
+    span {
       text-decoration: none;
       color: #121314;
       position: relative;
+      text-decoration: none!important;
+        color: black!important;
     }
-    a:after {
+    span:after {
       content: "";
       position: absolute;
       z-index: -1;
@@ -202,7 +212,7 @@
       transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
       background-color: rgba(79, 192, 141, 0.5);
     }
-    a:hover:after {
+    span:hover:after {
       top: 0%;
     }
   </style>
