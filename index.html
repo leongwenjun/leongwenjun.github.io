@@ -54,7 +54,7 @@
           >学习</span
         >前端开发，希望可以早日找到一份相关的实习。如果你碰巧了解相关的机会，欢迎<span title="简历下载"  
 			data-container="body" data-toggle="popover" data-placement="right" 
-			data-content="<a href='https://raw.githubusercontent.com/leongwenjun/leongwenjun.github.io/master/profiles/%E6%A2%81%E6%96%87%E4%BF%8A-%E7%AE%80%E5%8E%86.pdf'>中文</a> | English">点击此处</span>下载我的简历，我将不胜感激。
+			data-content="<a href='https://github.com/leongwenjun/leongwenjun.github.io/raw/master/profiles/%E6%A2%81%E6%96%87%E4%BF%8A-%E7%AE%80%E5%8E%86.pdf'>中文</a> | English">点击此处</span>下载我的简历，我将不胜感激。
       </p>
       <p>
         最近正在用 Vue.js 来做一个高仿的 PC 端<span id="xiaomi">小米商城</span
@@ -197,22 +197,25 @@
       text-decoration: none;
       color: #121314;
       position: relative;
-      text-decoration: none!important;
-        color: black!important;
+      white-space: nowrap;
     }
     span:after {
       content: "";
       position: absolute;
       z-index: -1;
       top: 60%;
-      left: -0.1em;
-      right: -0.1em;
+      left:0;
+      right: 0;
       bottom: 0;
-      transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+      transition: top 150ms cubic-bezier(.25, .1, .25, 1);
       background-color: rgba(79, 192, 141, 0.5);
     }
     span:hover:after {
       top: 0%;
+    }
+    a{
+      color: rgba(79, 192, 141);
+      font-weight: bold;
     }
   </style>
 </html>
