@@ -4,145 +4,252 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>梁文俊</title>
-    <link rel="icon" type="image/x-icon" href="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez45n59m6j303k03k3yf.jpg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez45n59m6j303k03k3yf.jpg"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./popover.css">
+    <link rel="stylesheet" href="./popover.css" />
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+    <div class="lang">
+      <div class="zh" style="cursor: pointer;color: rgba(79, 192, 141);">中</div>&nbsp|&nbsp<div class="en" style="cursor: pointer">EN</div>
+    </div>
     <div class="body-bg">
+      <div class="preload">
       <div id="me" class="preload-portrait" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0exxwzvj30u01404qp.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0exxwzvj30u01404qp.jpg"
+        />
       </div>
       <div id="guangdong" class="preload-portrait" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0f8tsntj30u01c0azq.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0f8tsntj30u01c0azq.jpg"
+        />
       </div>
       <div id="shanghai1" class="preload-portrait" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0ds1g7cj30u0140x3y.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0ds1g7cj30u0140x3y.jpg"
+        />
       </div>
       <div id="mimall" class="preload-landscape" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0ep04wpj31hc0u0dp5.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0ep04wpj31hc0u0dp5.jpg"
+        />
       </div>
       <div id="travel" class="preload-portrait" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0b7zbk3j30u00u04qp.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0b7zbk3j30u00u04qp.jpg"
+        />
       </div>
       <div id="photo" class="preload-landscape" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0e9ffxgj31400u0u0x.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0e9ffxgj31400u0u0x.jpg"
+        />
       </div>
       <div id="sanya" class="preload-landscape" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0dxcv07j31400u0qh1.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0dxcv07j31400u0qh1.jpg"
+        />
       </div>
       <div id="shanghai2" class="preload-landscape" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0dhb9i5j31c00u0u0x.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0dhb9i5j31c00u0u0x.jpg"
+        />
       </div>
       <div id="wechat" class="preload-portrait" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0asljljj30iq0owwfh.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez0asljljj30iq0owwfh.jpg"
+        />
       </div>
       <div id="learn" class="preload-portrait" style="display: none;">
-        <img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez40k5m2aj30u0140b29.jpg" />
+        <img
+          src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gez40k5m2aj30u0140b29.jpg"
+        />
       </div>
-      <h1>你好。</h1>
-      <p style="font-weight: 500; font-size: 2.2em;">
-        我的名字叫<span id="name">梁文俊</span>。
-      </p>
-      <p>
-        我来自<span id="hometown">广东</span>，是一名在<span id="shanghaione">上海</span
-        >上学的大三学生，信息管理与信息系统专业。 正在<span id="learning"
-          href="https://github.com/neonon"
-          >学习</span
-        >前端开发，希望可以早日找到一份相关的实习。如果你碰巧了解相关的机会，欢迎<span title="简历下载"  
-			data-container="body" data-toggle="popover" data-placement="right" 
-			data-content="<a href='https://gitee.com/leongwenjun/data_storage/raw/master/%E6%A2%81%E6%96%87%E4%BF%8A-%E7%AE%80%E5%8E%86.pdf'>中文</a> | English">点击此处</span>下载我的简历，我将不胜感激。
-      </p>
-      <p>
-        最近正在用 Vue.js 来做一个高仿的 PC 端<span id="xiaomi">小米商城</span
-        >网页，如果你有兴趣，这是项目的
-        <span title="Github"  
-			data-container="body" data-toggle="popover" data-placement="right" 
-			data-content="<a href='https://github.com/leongwenjun/imitating-mi-shop'>项目 Github 页面</a> | <a href='https://github.com/leongwenjun'>个人 Github 页面</a>">Github 页面</span>。
-      </p>
-      <p>
-        在课外方面，我喜欢<span id="traveling">旅游</span>和<span id="photographing"
-          >摄影</span
-        >，曾在假期去<span id="hainan">三亚</span
-        >当了一个暑假的旅行义工，在上学期间，也用周末拍遍了<span id="shanghaitwo"
-          >上海</span
-        >大大小小的角落。
-      </p>
-      <p>
-        如果你有兴趣和我交个朋友，这是我的<span id="qrcode">微信二维码</span
-        >，我们可以多聊聊，技术，学习，生活，任何话题都可以。
-      </p>
+      </div>
+      <div class="chinese">
+        <h1>你好。</h1>
+        <p style="font-weight: 500; font-size: 2.2em;">
+          我的名字叫<span class="name">梁文俊</span>。
+        </p>
+        <p>
+          我来自<span class="hometown">广东</span>，是一名在<span
+            class="shanghaione"
+            >上海</span
+          >上学的大三学生，信息管理与信息系统专业。 正在<span
+            class="learning"
+            href="https://github.com/neonon"
+            >学习</span
+          >前端开发，希望可以早日找到一份相关的实习。如果你碰巧了解相关的机会，欢迎<span
+            title="简历下载"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="right"
+            data-content="<a href='https://gitee.com/leongwenjun/data_storage/raw/master/%E6%A2%81%E6%96%87%E4%BF%8A-%E7%AE%80%E5%8E%86.pdf'>中文</a> | English"
+            >点击此处</span
+          >下载我的简历，我将不胜感激。
+        </p>
+        <p>
+          最近正在用 Vue.js 来做一个高仿的 PC 端<span class="xiaomi"
+            >小米商城</span
+          >网页，如果你有兴趣，这是项目的
+          <span
+            title="Github"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="right"
+            data-content="<a href='https://github.com/leongwenjun/imitating-mi-shop'>项目 Github 页面</a> | <a href='https://github.com/leongwenjun'>个人 Github 页面</a>"
+            >Github 页面</span
+          >。
+        </p>
+        <p>
+          在课外方面，我喜欢<span class="traveling">旅游</span>和<span
+            class="photographing"
+            >摄影</span
+          >，曾在假期去<span class="hainan">三亚</span
+          >当了一个暑假的旅行义工，在上学期间，也用周末拍遍了<span
+            class="shanghaitwo"
+            >上海</span
+          >大大小小的角落。
+        </p>
+        <p>
+          如果你有兴趣和我交个朋友，这是我的<span class="qrcode"
+            >微信二维码</span
+          >，我们可以多聊聊，技术，学习，生活，任何话题都可以。
+        </p>
+      </div>
+      <div class="english" style="display: none">
+        <h1>Hello there.</h1>
+        <p style="font-weight: 500; font-size: 2.2em;">
+          My name is <span class="name">Liang Wenjun</span>.
+        </p>
+
+        <p>
+          I'm from <span class="hometown">Guangdong</span> and I am a junior in
+          <span class="shanghaione">Shanghai</span>, majoring in information
+          management and information systems. I am
+          <span class="learning" href="https://github.com/neonon"
+            >learning</span
+          >
+          front-end development and eager to find an internship. If you happen
+          to learn about the related opportunities, please
+          <span
+            title="Resume"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="right"
+            data-content="<a href='https://gitee.com/leongwenjun/data_storage/raw/master/%E6%A2%81%E6%96%87%E4%BF%8A-%E7%AE%80%E5%8E%86.pdf'>中文</a> | English"
+            >click here</span
+          >
+          to download my resume, I would appreciate it.
+        </p>
+        <p>
+          Recently, I was using Vue.js to remake
+          <span class="xiaomi">Mi Mall</span>. If you are interested, this is
+          the project's
+          <span
+            title="Github"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="right"
+            data-content="<a href='https://github.com/leongwenjun/imitating-mi-shop'>Github of the Project</a> | <a href='https://github.com/leongwenjun'>Personal Github</a>"
+            >Github</span
+          >.
+        </p>
+        <p>
+          Outside of studying in college, I enjoy
+          <span class="traveling">traveling</span> and
+          <span class="photographing">photography</span>. I went to
+          <span class="hainan">Sanya</span> during the summer vacation to be a
+          travel volunteer when I was a freshman. During school, I also hang out
+          on weekends to take a good look of
+          <span class="shanghaitwo">Shanghai</span>.
+        </p>
+        <p>
+          If you want to making a friend with me, this is my
+          <span class="qrcode">WeChat QR code</span>. We can talk about
+          technology, learning, life, any topic.
+        </p>
+      </div>
     </div>
   </body>
 
   <script>
     $(document).ready(function () {
-      $("#name").mouseover(function () {
+      $(".name").mouseover(function () {
         $("#me").css({ display: "block" });
       }),
-        $("#name").mouseout(function () {
+        $(".name").mouseout(function () {
           $("#me").css({ display: "none" });
         }),
-        $("#hometown").mouseover(function () {
+        $(".hometown").mouseover(function () {
           $("#guangdong").css({ display: "block" });
         }),
-        $("#hometown").mouseout(function () {
+        $(".hometown").mouseout(function () {
           $("#guangdong").css({ display: "none" });
         }),
-        $("#shanghaione").mouseover(function () {
+        $(".shanghaione").mouseover(function () {
           $("#shanghai1").css({ display: "block" });
         }),
-        $("#shanghaione").mouseout(function () {
+        $(".shanghaione").mouseout(function () {
           $("#shanghai1").css({ display: "none" });
         }),
-        $("#xiaomi").mouseover(function () {
+        $(".xiaomi").mouseover(function () {
           $("#mimall").css({ display: "block" });
         }),
-        $("#xiaomi").mouseout(function () {
+        $(".xiaomi").mouseout(function () {
           $("#mimall").css({ display: "none" });
         }),
-        $("#traveling").mouseover(function () {
+        $(".traveling").mouseover(function () {
           $("#travel").css({ display: "block" });
         }),
-        $("#traveling").mouseout(function () {
+        $(".traveling").mouseout(function () {
           $("#travel").css({ display: "none" });
         }),
-        $("#photographing").mouseover(function () {
+        $(".photographing").mouseover(function () {
           $("#photo").css({ display: "block" });
         }),
-        $("#photographing").mouseout(function () {
+        $(".photographing").mouseout(function () {
           $("#photo").css({ display: "none" });
         }),
-        $("#hainan").mouseover(function () {
+        $(".hainan").mouseover(function () {
           $("#sanya").css({ display: "block" });
         }),
-        $("#hainan").mouseout(function () {
+        $(".hainan").mouseout(function () {
           $("#sanya").css({ display: "none" });
         }),
-        $("#shanghaitwo").mouseover(function () {
+        $(".shanghaitwo").mouseover(function () {
           $("#shanghai2").css({ display: "block" });
         }),
-        $("#shanghaitwo").mouseout(function () {
+        $(".shanghaitwo").mouseout(function () {
           $("#shanghai2").css({ display: "none" });
         }),
-        $("#qrcode").mouseover(function () {
+        $(".qrcode").mouseover(function () {
           $("#wechat").css({ display: "block" });
         }),
-        $("#qrcode").mouseout(function () {
+        $(".qrcode").mouseout(function () {
           $("#wechat").css({ display: "none" });
         }),
-        $("#learning").mouseover(function () {
+        $(".learning").mouseover(function () {
           $("#learn").css({ display: "block" });
         }),
-        $("#learning").mouseout(function () {
+        $(".learning").mouseout(function () {
           $("#learn").css({ display: "none" });
         }),
-        $(function () { 
-	$("[data-toggle='popover']").popover({html:true});
-});
+        $(function () {
+          $("[data-toggle='popover']").popover({ html: true });
+        }),
+        $(".zh").click(function () {
+          $(".chinese").css({ display: "block" }), $(".english").css({ display: "none" }), $(".zh").css({ color:"rgba(79, 192, 141)"}),$(".en").css({ color: "black" });
+        }),
+        $(".en").click(function () {
+          $(".english").css({ display: "block" }), $(".chinese").css({ display: "none" }),$(".en").css({ color: "rgba(79, 192, 141)" }),$(".zh").css({ color: "black" });
+        });
     });
   </script>
   <style>
@@ -152,10 +259,11 @@
         sans-serif;
       font-size: calc(10px + 0.33vw);
       -webkit-font-smoothing: antialiased;
-      padding: 0vh 10vw 5vh ;
+      padding: 0vh 10vw 5vh;
       color: #121314;
       position: relative;
     }
+
     .preload-portrait {
       position: absolute;
       display: none;
@@ -168,6 +276,7 @@
       background-size: contain;
       z-index: -2;
     }
+
     .preload-landscape {
       position: absolute;
       display: none;
@@ -184,40 +293,53 @@
     img {
       width: 100%;
     }
+
     h1 {
       font-size: 4.5em;
       font-weight: 600;
       margin-bottom: 0;
     }
+
     p {
       font-size: 1.6em;
       font-weight: 400;
       line-height: 1.4;
       max-width: 26em;
     }
+
     span {
       text-decoration: none;
       color: #121314;
       position: relative;
       white-space: nowrap;
     }
+
     span:after {
       content: "";
       position: absolute;
       z-index: -1;
       top: 60%;
-      left:0;
+      left: 0;
       right: 0;
       bottom: 0;
-      transition: top 150ms cubic-bezier(.25, .1, .25, 1);
+      transition: top 150ms cubic-bezier(0.25, 0.1, 0.25, 1);
       background-color: rgba(79, 192, 141, 0.5);
     }
+
     span:hover:after {
       top: 0%;
     }
-    a{
+
+    a {
       color: rgba(79, 192, 141);
       font-weight: bold;
     }
+    .lang {
+    display: flex;
+    font-size: 2em;
+    top: 1em;
+    position: relative;
+    
+}
   </style>
 </html>
