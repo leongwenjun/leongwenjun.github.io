@@ -77,8 +77,17 @@
         </div>
       </div>
       <div class="chinese">
-        <h1 id="move">你好</h1>
-        <p id="location" style="font-weight: 500; font-size: 2.2em;">
+        <div class="container">
+          <div class="flip">
+            <div class="front">
+              <h1>你好</h1>
+            </div>
+            <div id="location" class="back">
+              <h1> Hello</h1>
+            </div>
+          </div>
+        </div>
+        <p  style="font-weight: 500; font-size: 2.2em;">
           我的名字叫<span class="name">梁文俊</span>。<br />
         </p>
         <p>
@@ -128,8 +137,17 @@
         </p>
       </div>
       <div class="english" style="display: none;">
-        <h1>Hello</h1>
-        <p id="ENlocation" style="font-weight: 500; font-size: 2.2em;">
+        <div class="container">
+          <div class="flip">
+            <div class="front">
+              <h1>Hello</h1>
+            </div>
+            <div id="ENlocation" class="back">
+              <h1>你好</h1>
+            </div>
+          </div>
+        </div>
+        <p style="font-weight: 500; font-size: 2.2em;">
           My name is <span class="name">Liang Wenjun</span>.
         </p>
 
@@ -275,8 +293,8 @@
           //console.log(data.content.address_detail.city),
           city = data.content.address_detail.city;
           console.log(city);
-          $("#location").prepend("来自" + city + "的朋友," + "<br>");
-          $("#ENlocation").prepend("My friend from \n" + city + "<br>");
+          $("#location").append('<span>'+"来自" + city + "的朋友,"+'</span>');
+          $("#ENlocation").append('<span>'+"My friend from \n" + city+'</span>');
         }
       },
       error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -298,10 +316,39 @@
       position: relative;
       margin-top: 0;
     }
-#move{
-  content: 'a';
-  display: inline-block;
-}
+    .front,
+    .back {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      backface-visibility: hidden;
+    }
+    .container {
+      perspective: 1000;
+      transform-style: preserve-3d;
+    }
+    .flip {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    .container,
+    .front,
+    .back {
+      width: 11em;
+      height: 9em;
+    }
+
+    .front {
+      z-index: 2;
+    }
+    .back {
+      transform: rotateY(-180deg);
+    }
+    .container:hover .flip {
+      transform: rotateY(180deg);
+    }
+
     .preload-portrait {
       position: absolute;
       display: none;
@@ -381,7 +428,8 @@
       top: 1em;
       position: relative;
       top: 1.2em;
-    left: 0.18em;
+      left: 0.18em;
+      z-index: 3;
     }
   </style>
 </html>
